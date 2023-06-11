@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      EPUB Viewer
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div #viewer id="viewer"></div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="previousPage()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+      <ion-button (click)="nextPage()">
+        <ion-icon name="arrow-forward"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="decreaseFontSize()">
+        <ion-icon name="remove"></ion-icon>
+      </ion-button>
+      <ion-button (click)="increaseFontSize()">
+        <ion-icon name="add"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
