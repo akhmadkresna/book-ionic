@@ -7,11 +7,76 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  
+  
+      <h1>Best Seller</h1>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <!-- <app-explore-container name="Tab 1 page"></app-explore-container> -->
+  <div class="book-swiper">
+  <swiper-container [slidesPerView]="2.7" [spaceBetween]="40">
+    <swiper-slide>
+      <div>
+        <div class="book-img">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/81WcnNQ-TBL.jpg" alt="" class="book-photo">
+        </div>
+        <div class="center">
+        <div class="book-title">BIG MAGIC</div>
+        <div class="book-author">by Elizabeth Gilbert</div>
+        </div>
+      </div>
+    </swiper-slide>
+    <swiper-slide>
+      <div>
+        <div class="book-img">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/81WcnNQ-TBL.jpg" alt="" class="book-photo">
+        </div>
+        <div class="center">
+        <div class="book-title">BIG MAGIC</div>
+        <div class="book-author">by Elizabeth Gilbert</div>
+        </div>
+      </div>
+    </swiper-slide>
+    <swiper-slide>
+      <div>
+        <div class="book-img">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/81WcnNQ-TBL.jpg" alt="" class="book-photo">
+        </div>
+        <div class="center">
+        <div class="book-title">BIG MAGIC</div>
+        <div class="book-author">by Elizabeth Gilbert</div>
+        </div>
+      </div>
+    </swiper-slide>
+  </swiper-container>
+  </div>
+
+  <h1>New Book</h1>
+  <div class="book-list">
+    <div class="book-cell">
+      <div class="book-img">
+       <img src="https://i.pinimg.com/originals/a8/b9/ff/a8b9ff74ed0f3efd97e09a7a0447f892.jpg" alt="" class="book-photo">
+      </div>
+      <div class="book-content">
+       <div class="book-title">Ten Thousand Skies Above You</div>
+       <div class="book-author">by Claudia Gray</div>
+       <div class="rate">
+        <fieldset class="rating blue">
+         <input type="checkbox" id="star6" name="rating" value="5">
+         <label class="full1" for="star6"></label>
+         <input type="checkbox" id="star7" name="rating" value="4">
+         <label class="full1" for="star7"></label>
+         <input type="checkbox" id="star8" name="rating" value="3">
+         <label class="full1" for="star8"></label>
+         <input type="checkbox" id="star9" name="rating" value="2">
+         <label class="full1" for="star9"></label>
+         <input type="checkbox" id="star10" name="rating" value="1">
+         <label class="full1" for="star10"></label>
+        </fieldset>
+        <span class="book-voters">1.987 voters</span>
+       </div>
+       <div class="book-sum">The hunt for each splinter of Paul's soul sends Marguerite racing through a war-torn San Francisco.</div>
+       <div class="book-see book-blue">See The Book</div>
+      </div>
+     </div>
+  </div>
 </ion-content>
