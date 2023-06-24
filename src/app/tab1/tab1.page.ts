@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -8,6 +9,11 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  constructor(private route: Router) {}
+
+  openBook(){
+    this.route.navigate(['/book']);
+    console.log("test")
+  }
 
 }
